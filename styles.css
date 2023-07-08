@@ -39,6 +39,10 @@
     padding: 0 20px;
  }
 
+ .nav a{
+   text-decoration: none;
+ }
+
  .nav li:hover{
     transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -69,7 +73,7 @@
  }
  
  .container {
-    max-width: 1000px;
+    max-width: 1100px;
     margin:0 auto;
     padding: 0 1.5em;
 }
@@ -83,6 +87,7 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding:20px;
  }
 
  .button-subject{
@@ -104,15 +109,18 @@
    padding: 20px;
  }
 
+ .subject-content-heading{
+   margin:10px 0px;
+ }
+
  .subject-content-card{
-   padding:20px;
+   padding:30px;
    margin:20px 0px;
    background-color: white;
    border-radius: 10px;
  }
 
  .subject-content-sub{
-   max-height: 150px;
    display:flex;
    flex-wrap:wrap;
    flex-direction: column;
@@ -121,4 +129,11 @@
  .subject-content-sub a{
     padding:10px;
     color: rgb(98, 97, 97);
+    font-size: 16px;
+ }
+ 
+ @media (min-width:800px){
+   .subject-content-sub {
+      max-height: 150px;}
+   
  }
